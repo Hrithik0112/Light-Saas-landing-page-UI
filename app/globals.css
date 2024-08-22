@@ -29,4 +29,8 @@
     .section-wrapper {
         @apply max-w-[540px] mx-auto
     }
+
+    .card {
+        @apply p-10 rounded-3xl border border-[#f1f1f1] shadow-[0_7px_14px_#eaeaea] max-w-xs w-full
+    }
 }
