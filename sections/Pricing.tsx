@@ -86,8 +86,8 @@ const Pricing = () => {
               </div>
               <button className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && "bg-black text-white")}>{buttonText}</button>
               <ul className="flex flex-col gap-5 mt-8">
-                {features.map((feature) => (
-                  <li className="text-sm flex gap-4 items-center">
+                {features.map((feature , index) => (
+                  <li key={index} className="text-sm flex gap-4 items-center">
                     <CheckIcon className="size-6" />
                     <span>{feature}</span>
                   </li>
